@@ -1,0 +1,707 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #fff;
+    font-family: sans-serif;
+
+  }
+
+  a{
+    text-decoration: none;
+  }
+  li{
+    list-style: none;
+  }
+  .flax{
+    display: flex;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+  @font-face {
+    font-family:'Noto Serif' ;
+    src: url(../fonts/OFL.txt);
+  }
+  .container{
+    width: 1260px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+  .hero{
+    position: relative;
+    height: 715px;
+    background-image: url("../imhg/hero-banner\ 2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 200px;
+  }
+  #hero_all{
+    
+    padding: 30px 0;  margin-bottom:125px;
+  }
+  .navigation{
+    
+    align-items: center;
+    margin-bottom:36px;
+  
+  }
+  .nav_list{
+    width: 310px;
+    height: 25px;
+    justify-content: space-between;
+    margin-right:auto ;
+  }
+  .nav_link{
+    font-family: "Noto Serif";
+    color:rgb(162, 160, 160);
+    font-weight:400;
+    font-size: 18px;
+    line-height: 25px;   
+  }
+  .nav_link:hover{
+    color: black;
+  }
+  .nav_img{
+    width: 125px;
+    margin-right: auto;
+  }
+  .nav_box{
+    width: 150px;
+    justify-content: space-evenly
+  }
+  .explore{
+    margin:0px 0 0 96px;
+  }
+  .explore_title{
+    font-family: "Noto Serif";
+    font-weight: 700;
+    font-size: 60px;
+    list-style: 80px;
+    margin-bottom: 50px;
+  }
+  .explore_link{
+    color: #fff;
+    padding: 18px 36px;
+    border-radius: 5px;
+    border: 1px solid #FF715B;
+    background-color: #FF715B;
+  }
+  .explore_link:hover{
+    background-color: #fff;
+    color: #FF715B;
+    transition: 0.8s ease;
+
+  }
+  .price{
+    width: 846px;
+    height: 111px;
+    position: absolute;
+    right: 0;
+    bottom: -55px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #e1e1e1;
+  }
+  .price_list{
+    width: 845px;
+    height: 110px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .price_link{
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 5px;
+    background-color: #FF715B;
+    border: 1px solid #FF715B;
+  }
+  .price_link:hover{
+    background-color: #fff;
+    color: #FF715B;
+    transition: 0.8s ease;
+  }
+  .price_title{
+    margin-bottom: 10px;
+    width: 87px;
+    height: 19px;
+    
+    
+  }
+  .price_txt{
+    color: #FF715B;
+  }
+  .explore_left_right{
+    position: absolute;
+    bottom: -60px;
+    width: 310px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+  }
+  .left_right{
+    width: 105px;
+    height: 34px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+  }
+  .bx-chevron-left{
+    padding: 12px 14px;
+    border: 1px solid #FF715B;
+    background-color: #FF715B;
+    color: #fff;
+    border-radius: 3px;
+  }
+  .bx-chevron-left:hover{
+    background-color: #fff;
+    color: #FF715B;
+    transition: 0.8s ease;
+  }
+  .bx-chevron-right{
+    padding: 12px 14px;
+    border: 1px solid #FF715B;
+    background-color: #FF715B;
+    color: #fff;
+    border-radius: 3px;
+  }
+  .bx-chevron-right:hover{
+    background-color: #fff;
+    color: #FF715B;
+    transition: 0.8s ease;
+  }
+  .son{
+    font-family: "Noto Serif";
+    padding: 10px 12px;
+    color: #FF715B;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .plan{
+    margin-bottom: 190px;
+    width: 1050px;
+    height: 233px;
+    display:inline-block;
+    
+  }
+  .plan_list{
+    width: 1050px;
+    height:233px;
+    display: flex;
+    justify-content: space-around;  
+  }
+  .paln_item{
+    padding: 25px;
+    width: 232px;
+    height: 232px;
+    background-color: #f8f8f8;
+    box-shadow: 3px 3px 25px rgba(200, 180, 180, 0.2);
+  }
+  
+  .img_gitara{
+    width: 70px;
+    height: 70px;
+    margin: 21px 0 7px 50px;
+  }
+  .plan_title{
+    font-family: "Noto Serif";
+    font-weight: 700px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .plan_txt{
+    font-family: "Noto Serif";
+    font-weight: 400;
+    color: #A79997;
+    font-size: 12px;
+    line-height: 18px; 
+    text-align: center; 
+  }
+ 
+  .destination{
+    margin-bottom: 190px;
+   display: flex;
+  }
+  .dectination_disc{
+    width: 300px;
+    margin-right: 50px;
+  }
+  span{
+    color: #FF715B;
+  }
+  .destination_title{
+    font-family: "Noto Serif";
+    font-weight: 800px;
+    font-size: 35px;
+    line-height: 46px;
+    margin-bottom: 40px;
+  }
+  .dectination_txt{
+    font-family: "Noto Serif";
+    color: #A79997;
+    font-weight:400;
+    font-size: 13px;
+    line-height: 19px;
+    margin-bottom: 60px;
+  }
+  .dectination_link{
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 5px;
+    background-color: #FF715B;
+    border: 1px solid #FF715B;
+    transition: 0.8s ease;
+  }
+  .dectination_link:hover{
+    background-color: #fff;
+    color: #FF715B;
+
+  }
+  .dectination_images{
+    font-family: "Noto Serif";
+    width: 750px;
+    height: 285px;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .dectination_img{
+    width: 230px;
+    height: 284px;
+    border-radius: 3px;
+  }
+  .total{
+    margin-bottom: 280px;
+    margin-left: 150px;
+    display: flex;
+    
+  }
+  .total_disc{
+    margin-left: 140px;
+  }
+  .total_title{
+    font-family: "Noto Serif";
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+    color: #2C2C2C;
+    margin-bottom: 62px;
+  }
+  .total_text{
+    
+    margin-bottom: 50px;
+    margin-left: 50px;
+    font-weight: 600;
+font-size: 22px;
+line-height: 28px;
+color: #000000;
+
+
+  }
+  .total_txt{
+    font-family: "Noto Serif";
+    font-weight: 400;
+    font-size:18px;
+    line-height:22px;
+    color: gray;
+    margin-left:50px ;
+    margin-bottom: 40px;
+    
+  }
+  .total_image{
+    margin-right: 370px;
+    position: relative;
+  }
+  .total_mayak{ 
+   width: 600px;
+   height: 490px;
+  }
+  .rasm{
+    z-index: 20;
+    position: absolute;
+    width: 407px;
+    height: 500px;
+  }
+  .dod{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 425px;
+    left: -55px;
+  }
+  .yellow{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left:340px;
+    top:-50px
+  }
+  .choose{
+    position: relative;
+    text-align: center;
+    margin-bottom:300px;
+  }
+  .boxx_one{
+    position: absolute;
+    top: 280px;
+    left: 100px;
+    width: 322px;
+    height: 385px;
+  }
+  .boxx_two{
+    right: 100px;
+    position: absolute;
+    top: 280px;
+    width: 322px;
+    height: 385px;
+  }
+  .choose_title{
+    font-family: "Noto Serif";
+    font-weight: 800px;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  .choose_img{
+    width: 322px;
+    height: 385px;
+  }
+  .oil{
+    
+    bottom:-180px;
+    left: 138px;
+    
+    position: absolute;
+    width: 285px;
+    height: 75px;
+    background-color: #fff;
+    
+    box-shadow: 3px 3px 5px #e1e1e1;
+    
+  }
+  .oil_two{
+    
+    bottom:-38px;
+    left: 475px;
+    
+    position: absolute;
+    width: 285px;
+    height: 75px;
+    background-color: #fff;
+    
+    box-shadow: 3px 3px 5px #e1e1e1;
+    
+  }
+  .oil_tree{
+    
+    bottom:-185px;
+    right: 100px;
+    
+    position: absolute;
+    width: 285px;
+    height: 75px;
+    background-color: #fff;
+    
+    box-shadow: 3px 3px 5px #e1e1e1;
+    
+  }
+  .view-link{
+    position: absolute;
+    bottom: -188px;
+    right: 510px;
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 5px;
+    background-color: #FF715B; border: 1px solid #FF715B;
+    transition: 0.8s ease;
+  }
+  .view-link:hover{
+    background-color: #fff;
+    color: #FF715B;
+  }
+  .oil_title{
+font-family: "Noto Serif";   
+font-weight: 700;
+font-size: 17px;
+line-height: 24px;
+color: #000000;
+margin-bottom: 15px;
+
+
+  }
+  .oil_txt{
+    font-family: "Noto Serif";
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FF715B;
+  }
+  .stars{
+    display: flex;
+  }
+  .bx-star{
+    font-size: 12px;
+    color: gold;
+    
+  }
+  .oil_text{
+    font-family: "Noto Serif";
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: gray;
+  }
+  .about{
+    width: 1121px;
+    position: relative;
+    margin-bottom: 150px;
+  }
+  .about_title{
+    font-family: "Noto Serif";
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    color: #2C2C2C;
+    margin-bottom: 50px;
+  }
+  .about_redline{
+    width: 505px;
+    height: 8px;
+    background-color: #FF715B;
+    border-radius: 3px;
+    margin-left: 310px;
+    margin-bottom: 50px;
+  }
+  .person_title{
+    font-family: "Noto Serif";
+    font-weight: bold;
+    font-size:17px;
+    line-height: 24px;
+    color: #000000;
+    text-align: center;
+}
+.person_text{
+text-align: center;
+font-weight: bold;
+font-size: 14px;
+line-height: 18px;
+color: #FF715B;
+}
+.person_txt{
+  text-align: center;
+  font-size: 14px;
+line-height: 28px;
+text-align: center;
+color: #A79997;
+margin-bottom: 50px;
+}
+.person_one{
+  top: 250px;
+  right: 150px;
+  width: 72px;
+  height: 72px;
+  position: absolute;
+}
+.person_two{
+  position: absolute;
+  right: -20px;
+  top: 130px;
+  width:92px;
+  height: 92px;
+}
+.person_tree{
+  width: 86px;
+  height: 86px;
+  position:absolute;
+  right: 50px;
+}
+.person_four{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 165px;
+  left: 100px;
+}
+.person_five{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 170px;
+  top: 230px;
+}
+.person_six{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: -30px;
+  top: 200px;
+}
+.person_seven{
+  position: absolute;
+  top: 350px;
+  left: -10px;
+}
+.bolls{
+  width: 70px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 525px;
+}
+.boll{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #A79997;
+}
+.boll:hover{
+  background-color: #FF715B;
+}
+  .apps{
+    width: 1200px;
+    height: 392px;
+    display: flex;
+    margin-bottom:150px;
+    
+    background: linear-gradient(90deg, #A6F2F2 0%, #DDF181 100%);
+  }
+  .apps_image{
+    margin-top: 25px;
+    width: 527px;
+    height: 367px;
+  }
+  .apps_title{
+    margin:100px 160px 40px 100px;
+    font-family: "Noto Serif";
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 47px;
+  }
+  .apps_list{
+    display: flex;
+    margin-left: 100px;
+  } 
+.google_image{
+  width: 145px;
+  height: 43px;
+}
+.apple_image{
+  width: 145px;
+  height: 43px;
+  margin-right: 18px;
+}
+  .more{
+    margin-top: 214px;
+  }
+  .footer{
+    padding-left: 135px ;
+    width: 1190px;
+    margin-bottom: 80px;
+    display: flex;
+  }
+  .box_one{
+    margin-right: auto;
+  }
+  .box_one_txt{
+    font-family: "Noto Serif";
+    color: #A79997;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 22px;
+  }
+  .box_one_txt:hover{
+    color: black;
+  }
+  .footer_txt{
+    font-family: "Noto Serif";
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 22px;
+    color: #A79997;
+  }
+  .bow_two{
+    margin-right: auto;
+  }
+
+  .box_two_title{
+    font-family: "Noto Serif";
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 26px;
+    margin-bottom: 22px;
+  }
+  .box_two_itwm{
+    font-family: "Noto Serif";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 17px;
+  }
+  .item{
+    color: #A79997;
+  }
+  .item:hover{
+    color: black;
+  }
+  .poot_title{
+    font-family: "Noto Serif";
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 26px;
+    margin-bottom: 44px;
+  }
+  .poot{
+    width: 300px;
+    height: 50px;
+    border:none;
+    border-radius: 3px;
+    background-color: #F8F8F8;
+    margin-bottom: 25px;
+  }
+  .button_link{
+    
+    padding: 12px 18px;
+    border: 1px solid #FF715B;
+    background-color: #FF715B;
+    color: #fff;
+    border-radius: 3px;
+  }
+  .button_link:hover{
+    background-color: #fff;
+    color: #FF715B;
+    transition: 0.8s ease;
+  }
+
+
+
+
+
+
+
+    
+  
+
+
+
+  
